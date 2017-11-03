@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>基础CSS - slice</title>
+<meta name="keywords" content="slice,中文css框架,css框架,开源css框架,css框架下载"/>
+<meta name="description" content="slice是一个开源中文 (X)HTML/CSS 框架 ,它的目的是减少你的css开发时间。它提供一个可靠的css基础去创建你的项目,能够用于网站的快速设计,通过重设和重建浏览器标准，可以让每个网站防 止枯燥的跨浏览器兼容性测试。"/>
+
+
+<link rel="stylesheet" href="assets/css/slice.css"> 
+<link rel="stylesheet" href="css/prettify.css" >
+
+
+<!--[if lt IE 9]>
+<script src="assets/js/html5.js"></script>
+<![endif]-->
+</head>
+<body>
+
+
+<div class="naver">
+	<div class="wrapper">
+    	<div class="brand">
+        	<a href="./index.html"><img src="imgs/logo.png"/></a>
+    	</div>
+    	<div class="gh">
+    		<a href="#"></a>
+    	</div>
+    	<div class="module">
+			<ul>
+				
+				<li> 
+					<a href="index.html">首页</a> 
+				</li>
+				<li> 
+					<a href="grid.html">12列栅格</a> 
+				</li>
+				<li> 
+					<strong><a href="base.html">基础CSS</a></strong> 
+				</li>
+				<li> 
+					<a href="widgets.html">组件</a> 
+				</li>
+				<li> 
+					<a href="javascript.html">JS插件</a> 
+				</li>
+				
+			</ul>
+	    </div>
+	    <div class="sub">
+	        <ul>
+	        	<li><a class="underline" href="http://www.qietu.com/" target="_blank" title="切图网" >切图（武汉）网络技术有限公司</a></li>
+	        </ul>
+	    </div>
+	</div>
+</div>
+
+
+
+<div class="heading">
+  <div class="wrapper">
+    <h2>基础CSS</h2>
+    <h3>通过重置一些不兼容的css代码，能够避免一些不必要的跨浏览器兼容问题，<br>定义了一些常用的css
+      类，能够用于快速开发，也能统一网页的风格。</h3>
+  </div>
+</div>
+<div class="wrapper">
+
+
+	<div class="row">
+    	<div class="col3">
+        	<ul class="sidebar nojs">
+            <li class="selected">
+            	<a href="#typography">排版</a>
+                <ul>
+                	<li class="selected"><a href="#paragraph">段落排版</a></li>
+                	
+                	<li><a href="#blockquote">引用</a></li>
+                	<li><a href="#abbr">标签</a></li>
+                </ul>
+            </li>
+            <li><a href="#code">代码</a></li>
+            <li><a href="#table">表格</a></li>
+            <li><a href="#form">表单</a></li>
+            <li><a href="#button">按钮</a></li>
+            <li><a href="#other">其他</a>
+            	<ul>
+                	<li><a href="#text">文字</a>
+                	<li><a href="#postion">位置</a>
+                	<li><a href="#background">背景</a>
+                	<li><a href="#border">边框</a>
+                	<li><a href="#image">图片</a>
+                </ul>
+            </li>
+            </ul>
+        </div>
+        <div class="col9 docs-body">
+        
+       
+    
+         
+           		<p id="typography"><strong>排版</strong></p>
+          <p>默认设置,段落,标题,文本，对字体颜色，锚文本的下划线，颜色，字体做了重写，均采用了最符合中国网站体验的12号字体和 Verdana, Arial, Helvetica, sans-serif 字体。行距22px。这些重写参考了，盛大，腾讯，百度，新浪等众多网站对css重写的选择。</p>
+          <p>&nbsp;</p>
+          <p><strong>演示</strong></p>
+                 
+<!--demo-->
+                            <p>采用了符合中国人阅读习惯的font-size:12px像素字体，行距line-height:22px像素。字体font-family:Verdana,Arial,Helvetica,sans-serif, body背景background:white;</p>
+                            <p>级联样式表（Cascading Style Sheet）简称“CSS”，通常又称为“风格样式表（Style Sheet）”，它是用来进行网页风格设计的。比如，如果想让链接字未点击时是蓝色的，当鼠标移上去后字变成红色的且有下划线，这就是一种风格。通过设立样式表，可以统一地控制HTML中各标志的显示属性。</p>
+                            <!--//demo-->
+              
+
+                        	<pre class="prettyprint">&lt;p&gt;采用了符合中国人阅读习惯的font-size:12px像素字体，行距line-height:22px像素。字体font-family:Verdana,Arial,Helvetica,sans-serif, body背景background:white;&lt;/p&gt;</pre>
+                
+           
+              
+              
+              <p id="paragraph">&nbsp;</p>
+              <p><strong>段落排版</strong></p>
+          <p>h1~h6标签同strong标签一样在seo中具有提高文字权重的效果</p>
+          <p>&nbsp;</p>
+          <p><strong>演示</strong></p>
+                    
+       	  <!--demo-->
+      <h1>我是h1标签，在seo中我拥有最高的权重</h1>
+      <h2>我是h2标签，在seo中我拥有仅次于h1标签的权重</h2>
+      <h3>我是h3标签，在seo中我拥有仅次于h1,h2标签的权重</h3>
+      <h4>我是h4标签，在seo中我拥有仅次于h1,h2,h3标签的权重</h4>
+      <h5>我是h5标签，在seo中我拥有仅次于h1,h2,h3,h4标签的权重</h5>
+                            <!--//demo-->
+                       
+
+                        	<pre class="prettyprint">&lt;h1&gt;我是h1标签，在seo中我拥有最高的权重&lt;/h1&gt;<br>&lt;h2&gt;我是h2标签，在seo中我拥有仅次于h1标签的权重&lt;/h2&gt;<br>&lt;h3&gt;我是h3标签，在seo中我拥有仅次于h1,h2标签的权重&lt;/h3&gt;<br>&lt;h4&gt;我是h4标签，在seo中我拥有仅次于h1,h2,h3标签的权重&lt;/h4&gt;<br>&lt;h5&gt;我是h5标签，在seo中我拥有仅次于h1,h2,h3,h4标签的权重&lt;/h5&gt;</pre>
+                    
+              
+          
+         
+                      
+             
+              
+              <p id="blockquote">&nbsp;</p>
+              <p><strong>引用</strong></p>
+          <p>引用常常被用于评论中，在网页中非常常见，用<code>&lt;blockquote&gt;</code>就可以轻松实现一段美观的引用。</p>
+            
+                    
+                        	<!--demo-->
+      <blockquote>级联样式表（Cascading Style Sheet）简称“CSS”，通常又称为“风格样式表（Style Sheet）”，它是用来进行网页风格设计的。比如，如果想让链接字未点击时是蓝色的，当鼠标移上去后字变成红色的且有下划线，这就是一种风格。
+        <blockquote>通过设立样式表，可以统一地控制HTML中各标志的显示属性。级联样式表可以使人更能有效地控制网页外观。使用级联样式表，可以扩充精确指定网页元素位置，外观以及创建特殊效果的能力。</blockquote>
+      </blockquote>
+                            <!--//demo-->
+                       
+                        	<pre class="prettyprint">&lt;blockquote&gt;级联样式表（Cascading Style Sheet）简称“CSS”，通常又称为“风格样式表（Style Sheet）”，它是用来进行网页风格设计的。比如，如果想让链接字未点击时是蓝色的，当鼠标移上去后字变成红色的且有下划线，这就是一种风格。<br>        &lt;blockquote&gt;通过设立样式表，可以统一地控制HTML中各标志的显示属性。级联样式表可以使人更能有效地控制网页外观。使用级联样式表，可以扩充精确指定网页元素位置，外观以及创建特殊效果的能力。&lt;/blockquote&gt;<br>      &lt;/blockquote&gt;</pre>
+                     
+            
+              
+              
+              
+              <p id="abbr">&nbsp;</p>
+              <p><strong>abbr</strong></p>
+          <p>标签常常用于关键字tag等地方，用<code>&lt;abbr&gt;</code>就可以轻松实现。</p>
+          
+                    	
+                    
+                        	<!--demo-->
+      <abbr>css3</abbr> <abbr>html5</abbr>
+                            <!--//demo-->
+                      
+                     
+                        	<pre class="prettyprint">&lt;abbr&gt;css3&lt;/abbr&gt; &lt;abbr&gt;html5&lt;/abbr&gt;</pre>
+                  
+          
+              
+              
+              
+           
+            
+            
+           
+          
+            
+            
+      
+           
+            
+            
+         
+            
+            <p id="code">&nbsp;</p>
+            <p><strong>代码区间 
+              </strong>
+              <!--demo-->
+            </p>
+<pre class="prettyprint">body{ background:white;}</pre>
+                            <!--//demo-->
+                        
+                       
+                        	<pre class="prettyprint">&lt;pre&gt;body{ background:white;}&lt;/pre&gt;</pre>
+                        
+           
+            
+            
+             
+            
+            
+            <p id="table">&nbsp;</p>
+            <p><strong>表格</strong></p>
+          <p>带边框的表格<small>加上<code>class="table table-bordered"</code>即可实现带边框的表格</small></p>
+       
+                    	<p>&nbsp;</p>
+                    	<p><strong>演示</strong></p>
+       	  <!--demo-->
+      <table class="table table-bordered">
+ <tbody>
+  <tr>
+   <td>当我还是个小女孩</td>
+   <td>我问我妈妈</td>
+   <td>将来我会变成什么样子呢</td>
+  </tr>
+ </tbody>
+ <tbody>
+  <tr>
+   <td>会漂亮吗</td>
+   <td>会富有吗</td>
+   <td>她对我说：世事不可强求，顺其自然吧</td>
+  </tr>
+ </tbody>
+ <tfoot>
+  <tr>
+    <td>当我长大并恋爱了</td>
+    <td>我问我的心上人</td>
+    <td>我们将来会怎么样呢</td>
+  </tr>
+  <tr>
+   <td>生活每天都美好吗</td>
+   <td>我的爱人对我说：</td>
+   <td>世事不可强求，顺其自然吧</td>
+  </tr>
+ </tfoot>
+</table>
+                            <!--//demo-->
+                    
+                        	<pre class="prettyprint">&lt;table class=&quot;table table-bordered&quot;&gt;<br> &lt;tbody&gt;<br>  &lt;tr&gt;<br>   &lt;td&gt;当我还是个小女孩&lt;/td&gt;<br>   &lt;td&gt;我问我妈妈&lt;/td&gt;<br>   &lt;td&gt;将来我会变成什么样子呢&lt;/td&gt;<br>  &lt;/tr&gt;<br> &lt;/tbody&gt;<br> &lt;tbody&gt;<br>  &lt;tr&gt;<br>   &lt;td&gt;会漂亮吗&lt;/td&gt;<br>   &lt;td&gt;会富有吗&lt;/td&gt;<br>   &lt;td&gt;她对我说：世事不可强求，顺其自然吧&lt;/td&gt;<br>  &lt;/tr&gt;<br> &lt;/tbody&gt;<br> &lt;tfoot&gt;<br>  &lt;tr&gt;<br>    &lt;td&gt;当我长大并恋爱了&lt;/td&gt;<br>    &lt;td&gt;我问我的心上人&lt;/td&gt;<br>    &lt;td&gt;我们将来会怎么样呢&lt;/td&gt;<br>  &lt;/tr&gt;<br>  &lt;tr&gt;<br>   &lt;td&gt;生活每天都美好吗&lt;/td&gt;<br>   &lt;td&gt;我的爱人对我说：&lt;/td&gt;<br>   &lt;td&gt;世事不可强求，顺其自然吧&lt;/td&gt;<br>  &lt;/tr&gt;<br> &lt;/tfoot&gt;<br>&lt;/table&gt;</pre>
+         
+          
+            
+            
+            <p>&nbsp;</p>
+            <p><strong>斑马表格</strong></p>
+          <p>加上<code>class="table table-zebra"</code>即可实现斑马表格</p>
+            
+                    	<p>&nbsp;</p>
+                    	<p><strong>演示</strong></p>
+       	  <!--demo-->
+      
+      <table width="100%" border="0" class="table table-zebra">
+        <tr>
+          <td>When I was just a little girl </td>
+          <td>I asked my mother</td>
+          <td>what will I be</td>
+          </tr>
+        <tr>
+          <td>will I be pretty</td>
+          <td>will I be rich</td>
+          <td>here\'s what he said to me</td>
+          </tr>
+        <tr>
+          <td>que sera sera</td>
+          <td>whatever will be</td>
+          <td>will be</td>
+          </tr>
+      </table>
+                          <!--//demo-->
+                      
+                        	<pre class="prettyprint">&lt;table width=&quot;100%&quot; border=&quot;0&quot; class=&quot;table table-zebra&quot;&gt;&lt;/table&gt;</pre>
+                      
+         
+            
+            <p id="form">&nbsp;</p>
+            <p><strong>表单</strong></p>
+          <p>对文本框等进行了重写，通过美化一些表单元素默认样式，例如文本框，按钮，下拉菜单等，让表单更美观。通过placeholder属性来完成，文本框的默认值，鼠标点击消失，失去光标，默认值恢复的效果。（改效果在firefox浏览器下可见）</p>
+      
+                    	<p>&nbsp;</p>
+                    	<p><strong>演示</strong></p>
+       	  <!--demo-->
+      <form action="" method="get" enctype="multipart/form-data">
+        <fieldset>
+        <legend>注册表单</legend>
+        <div class="form-group">
+           <div class="form-icon">
+           	fadf
+           </div>
+          <label class="form-label">姓名 <small>字符在3~9位</small></label>
+          <div class="form-input">
+          	
+          </div>
+          <input name="" type="text" placeholder="请填写真实的姓名">
+          <input name="" type="text" placeholder="请填写真实的姓名" class="text radius">
+        </div>
+        <p>
+          <label>自我介绍：</label>
+          <textarea name="textarea" id="textarea" cols="45" rows="5"></textarea>
+        </p>
+        <p>
+          <label>爱好：</label>
+          <input type="checkbox" name="checkbox" id="checkbox">
+          踢球
+          <input type="checkbox" name="checkbox" id="checkbox">
+          上网
+          <input type="checkbox" name="checkbox" id="checkbox">
+          冲浪 </p>
+        <p>
+          <label>性别：</label>
+          <input type="radio" name="radio" id="radio" value="radio">
+          男
+          <input type="radio" name="radio" id="radio" value="radio">
+          女 </p>
+        <p>
+          <label>学历：</label>
+          <select name="select" id="select">
+            <option value="1">大学/大专</option>
+            <option value="2">高中/中专</option>
+            <option>小学</option>
+          </select>
+        </p>
+        <p>
+          <label>文件域：</label>
+          <input type="file" name="fileField" id="fileField">
+        </p>
+        <p>
+          <label></label>
+          <input name="" type="submit" class="btn blue" value="提交">
+          <input name="重置" type="reset" class="btn" value="重置">
+        </p>
+        </fieldset>
+      </form>
+                            <!--//demo-->
+                       
+                        	<pre class="prettyprint">&lt;form action=&quot;&quot; method=&quot;get&quot; enctype=&quot;multipart/form-data&quot;&gt;<br>        &lt;fieldset&gt;<br>        &lt;legend&gt;注册表单&lt;/legend&gt;<br>        &lt;p&gt;<br>          &lt;label&gt;姓名 &lt;small&gt;字符在3~9位&lt;/small&gt;&lt;/label&gt;<br>          &lt;input name=&quot;&quot; type=&quot;text&quot; placeholder=&quot;请填写真实的姓名&quot;&gt;<br>          &lt;input name=&quot;&quot; type=&quot;text&quot; placeholder=&quot;请填写真实的姓名&quot; class=&quot;text radius&quot;&gt;<br>        &lt;/p&gt;<br>        &lt;p&gt;<br>          &lt;label&gt;自我介绍：&lt;/label&gt;<br>          &lt;textarea name=&quot;textarea&quot; id=&quot;textarea&quot; cols=&quot;45&quot; rows=&quot;5&quot;&gt;&lt;/textarea&gt;<br>        &lt;/p&gt;<br>        &lt;p&gt;<br>          &lt;label&gt;爱好：&lt;/label&gt;<br>          &lt;input type=&quot;checkbox&quot; name=&quot;checkbox&quot; id=&quot;checkbox&quot;&gt;<br>          踢球<br>          &lt;input type=&quot;checkbox&quot; name=&quot;checkbox&quot; id=&quot;checkbox&quot;&gt;<br>          上网<br>          &lt;input type=&quot;checkbox&quot; name=&quot;checkbox&quot; id=&quot;checkbox&quot;&gt;<br>          冲浪 &lt;/p&gt;<br>        &lt;p&gt;<br>          &lt;label&gt;性别：&lt;/label&gt;<br>          &lt;input type=&quot;radio&quot; name=&quot;radio&quot; id=&quot;radio&quot; value=&quot;radio&quot;&gt;<br>          男<br>          &lt;input type=&quot;radio&quot; name=&quot;radio&quot; id=&quot;radio&quot; value=&quot;radio&quot;&gt;<br>          女 &lt;/p&gt;<br>        &lt;p&gt;<br>          &lt;label&gt;学历：&lt;/label&gt;<br>          &lt;select name=&quot;select&quot; id=&quot;select&quot;&gt;<br>            &lt;option value=&quot;1&quot;&gt;大学/大专&lt;/option&gt;<br>            &lt;option value=&quot;2&quot;&gt;高中/中专&lt;/option&gt;<br>            &lt;option&gt;小学&lt;/option&gt;<br>          &lt;/select&gt;<br>        &lt;/p&gt;<br>        &lt;p&gt;<br>          &lt;label&gt;文件域：&lt;/label&gt;<br>          &lt;input type=&quot;file&quot; name=&quot;fileField&quot; id=&quot;fileField&quot;&gt;<br>        &lt;/p&gt;<br>        &lt;p&gt;<br>          &lt;label&gt;&lt;/label&gt;<br>          &lt;input name=&quot;&quot; type=&quot;submit&quot; class=&quot;btn blue&quot; value=&quot;提交&quot;&gt;<br>          &lt;input name=&quot;重置&quot; type=&quot;reset&quot; class=&quot;btn&quot; value=&quot;重置&quot;&gt;<br>        &lt;/p&gt;<br>        &lt;/fieldset&gt;<br>      &lt;/form&gt;</pre>
+                     
+           
+            
+            
+              <p id="button">&nbsp;</p>
+              <p><strong>按钮</strong></p>
+          <p>对按钮或者a标签按钮的样式重写,css3按钮是指通过css3来实现的按钮的效果，css3纯css可以实现立体，渐变，阴影，圆角等很多种特效，如果把这些属性通过各种不同的方式组合在一起就能实现很多不同的炫酷的按钮效果。 <code>&lt;a class=&quot;btn&quot;&gt;</code> 或者 <code>&lt;input type=&quot;btn&quot; class=&quot;btn&quot;&gt;</code></p>
+         
+                        	<!--demo-->
+      <table width="100%" border="0" class="table table-bordered">
+        <tr>
+          <td width="17%">演示</td>
+          <td width="83%">代码</td>
+        </tr>
+        <tr>
+          <td><a href="#" class="btn">默认</a></td>
+          <td><pre class="prettyprint">&lt;a href=&quot;#&quot; class=&quot;btn&quot;&gt;默认&lt;/a&gt;</pre></td>
+        </tr>
+        <tr>
+          <td><a href="#" class="btn btn-inverse">反向</a></td>
+          <td><pre class="prettyprint">&lt;a href=&quot;#&quot; class=&quot;btn btn-inverse&quot;&gt;反向&lt;/a&gt;</pre></td>
+        </tr>
+        <tr>
+          <td><a href="#" class="btn bg-red bg-inverse">红色</a></td>
+          <td><pre class="prettyprint">&lt;a href=&quot;#&quot; class=&quot;btn bg-red bg-inverse&quot;&gt;红色&lt;/a&gt;</pre></td>
+        </tr>
+        <tr>
+          <td><a href="#" class="btn bg-blue bg-inverse">蓝色</a></td>
+          <td><pre class="prettyprint">&lt;a href=&quot;#&quot; class=&quot;btn bg-blue bg-inverse&quot;&gt;蓝色&lt;/a&gt;</pre></td>
+        </tr>
+        <tr>
+          <td><a href="#" class="btn bg-green bg-inverse">绿色</a></td>
+          <td><pre class="prettyprint">&lt;a href=&quot;#&quot; class=&quot;btn bg-green bg-inverse&quot;&gt;绿色&lt;/a&gt;</pre></td>
+        </tr>
+        <tr>
+          <td><a href="#" class="btn bg-yellow bg-inverse">黄色</a></td>
+          <td><pre class="prettyprint">&lt;a href=&quot;#&quot; class=&quot;btn bg-yellow bg-inverse&quot;&gt;黄色&lt;/a&gt;</pre></td>
+        </tr>
+        <tr>
+          <td><a href="#" class="btn btn-little">超小号</a></td>
+          <td><pre class="prettyprint">&lt;a href=&quot;#&quot; class=&quot;btn btn-little&quot;&gt;小号&lt;/a&gt;</pre></td>
+        </tr>
+        <tr>
+          <td><a href="#" class="btn btn-small">小号</a></td>
+          <td><pre class="prettyprint">&lt;a href=&quot;#&quot; class=&quot;btn btn-small&quot;&gt;小号&lt;/a&gt;</pre></td>
+        </tr>
+        <tr>
+          <td><a href="#" class="btn btn-medium">中号</a></td>
+          <td><pre class="prettyprint">&lt;a href=&quot;#&quot; class=&quot;btn btn-medium&quot;&gt;中号&lt;/a&gt;</pre></td>
+        </tr>
+        <tr>
+          <td><a href="#" class="btn btn-large">大号</a></td>
+          <td><pre class="prettyprint">&lt;a href=&quot;#&quot; class=&quot;btn btn-large&quot;&gt;大号&lt;/a&gt;</pre></td>
+        </tr>
+        <tr>
+          <td colspan="2"><a href="#" class="btn btn-xlarge">加大号</a></td>
+        </tr>
+        <tr>
+          <td colspan="2"><pre class="prettyprint">&lt;a href=&quot;#&quot; class=&quot;btn btn-xlarge&quot;&gt;加大号&lt;/a&gt;</pre></td>
+        </tr>
+      </table>
+<!--//demo-->
+                      
+            
+            
+              <p id="text">&nbsp;</p>
+              <p><strong>文字</strong></p>
+          <!--demo-->
+      <p class="txt-red">当我还是个小女孩，</p>
+      <p class="txt-yellow">我问妈妈</p>
+      <p class="txt-blue">将来我会变成什么样子呢？</p>
+      <p class="txt-green">会漂亮吗？</p>
+      <p>会富有吗？</p>
+      <p>她对我说：</p>
+      <p>世事不可强求</p>
+      <p>顺其自然吧</p>
+                            <!--//demo-->
+                    
+                    
+                        	<pre class="prettyprint">&lt;p class=&quot;txt-red&quot;&gt;当我还是个小女孩，&lt;/p&gt;<br>&lt;p class=&quot;txt-yellow&quot;&gt;我问妈妈&lt;/p&gt;<br>&lt;p class=&quot;txt-blue&quot;&gt;将来我会变成什么样子呢？&lt;/p&gt;<br>&lt;p class=&quot;txt-green&quot;&gt;会漂亮吗？&lt;/p&gt;<br>&lt;p&gt;会富有吗？&lt;/p&gt;<br>&lt;p&gt;她对我说：&lt;/p&gt;<br>&lt;p&gt;世事不可强求&lt;/p&gt;<br>&lt;p&gt;顺其自然吧&lt;/p&gt;</pre>
+                        
+        
+          
+          
+             <p id="postion">&nbsp;</p>
+             <p><strong>文字位置</strong></p>
+          <!--demo-->
+      <p class="bdr txt-left pd-small">当我还是个小女孩，我问妈妈，将来我会变成什么样子呢？</p>
+      <p class="bdr txt-center pd-small">会漂亮吗？会富有吗？</p>
+      <p class="bdr txt-right pd-small">她对我说：世事不可强求,顺其自然吧</p>
+      <p class="bdr txt-justify pd-small">当我长大了，恋爱了，我问我的心上人，“我们将来会怎么样呢？我们的生活每天都会美好吗？”我的爱人对我说：“世事不可强求顺其自然吧。我们不能预见未来。世事不可强求顺其自然吧。”现在我有了自己的孩子，他们问我，“将来我会变成什么样子呢？会英俊吗？会富有吗？”我轻声地回答：“世事不可强求顺其自然吧。我们不能预见未来。世事不可强求顺其自然吧。”</p>
+
+                            <!--//demo-->
+                     
+        
+               	  <pre class="prettyprint">&lt;p class=&quot;bdr txt-left pd-small&quot;&gt;当我还是个小女孩，我问妈妈，将来我会变成什么样子呢？&lt;/p&gt;<br>&lt;p class=&quot;bdr txt-center pd-small&quot;&gt;会漂亮吗？会富有吗？&lt;/p&gt;<br>&lt;p class=&quot;bdr txt-right pd-small&quot;&gt;她对我说：世事不可强求,顺其自然吧&lt;/p&gt;
+&lt;p class=&quot;bdr txt-justify pd-small&quot;&gt;当我长大了，恋爱了，...世事不可强求顺其自然吧。”&lt;/p&gt;</pre>
+             
+         
+                    
+  
+  
+  
+             <p id="background">&nbsp;</p>
+             <p><strong>背景色</strong></p>
+          <p>歌词来自《Whatever Will Be, Will Be》</p>
+           
+                    	<p>&nbsp;</p>
+                    	<p><strong>演示</strong></p>
+       	  <!--demo-->
+      <p class="bg-red bg-inverse pd-small">When I was just a little girl,</p>
+      <p class="bg-yellow bg-inverse pd-small">I asked my mother, </p>
+      <p class="bg-blue bg-inverse pd-small">"What will I be?</p>
+      <p class="bg-green bg-inverse pd-small">Will I be pretty?</p>
+      <p>Will I be rich?"</p>
+      <p class="bg-red-light txt-red pd-small">When I was just a little girl,</p>
+      <p class="bg-yellow-light txt-yellow pd-small">I asked my mother, </p>
+      <p class="bg-blue-light txt-blue pd-small">"What will I be?</p>
+      <p class="bg-green-light txt-green pd-small">Will I be pretty?</p>
+      <p>Will I be rich?"</p>
+ 
+                          <!--//demo-->
+                      
+                     
+                        	<pre class="prettyprint">&lt;p class=&quot;bg-red bg-inverse pd-small&quot;&gt;When I was just a little girl,&lt;/p&gt;<br>&lt;p class=&quot;bg-yellow bg-inverse pd-small&quot;&gt;I asked my mother, &lt;/p&gt;<br>&lt;p class=&quot;bg-blue bg-inverse pd-small&quot;&gt;&quot;What will I be?&lt;/p&gt;<br>&lt;p class=&quot;bg-green bg-inverse pd-small&quot;&gt;Will I be pretty?&lt;/p&gt;
+&lt;p class=&quot;bg-red-light txt-red pd-small&quot;&gt;When I was just a little girl,&lt;/p&gt;<br>&lt;p class=&quot;bg-yellow-light txt-yellow pd-small&quot;&gt;I asked my mother, &lt;/p&gt;<br>&lt;p class=&quot;bg-blue-light txt-blue pd-small&quot;&gt;&quot;What will I be?&lt;/p&gt;<br>&lt;p class=&quot;bg-green-light txt-green pd-small&quot;&gt;Will I be pretty?&lt;/p&gt;
+</pre>
+   
+    <p>&nbsp;</p>
+    <p><strong>去掉背景</strong></p>
+    <p><code>.bg-none</code></p>
+    <p>&nbsp;</p>
+    <p id="border"><strong>边框</strong></p>
+          <p>歌词来自《Whatever Will Be, Will Be》</p>
+            
+                    	<p>&nbsp;</p>
+                    	<p><strong>演示</strong></p>
+       	  <!--demo-->
+      <p class="bdr bdr-red txt-red pd-small">When I was just a little girl,</p>
+      <p class="bdr bdr-yellow txt-yellow pd-small">I asked my mother, </p>
+      <p class="bdr bdr-blue txt-blue pd-small">"What will I be?</p>
+      <p class="bdr bdr-green txt-green pd-small">Will I be pretty?</p>
+      <p class="bdr pd-small">Will I be rich?"</p>
+ 
+                            <!--//demo-->
+                      
+                        	<pre class="prettyprint">&lt;p class=&quot;bdr bdr-red txt-red pd-small&quot;&gt;When I was just a little girl,&lt;/p&gt;<br>&lt;p class=&quot;bdr bdr-yellow txt-yellow pd-small&quot;&gt;I asked my mother, &lt;/p&gt;<br>&lt;p class=&quot;bdr bdr-blue txt-blue pd-small&quot;&gt;&quot;What will I be?&lt;/p&gt;<br>&lt;p class=&quot;bdr bdr-green txt-green pd-small&quot;&gt;Will I be pretty?&lt;/p&gt;<br>&lt;p class=&quot;bdr pd-small&quot;&gt;Will I be rich?&quot;&lt;/p&gt;</pre>
+             
+          
+          <!--//border-->
+          
+          
+          <p id="image">&nbsp;</p>
+          <p><strong>图片</strong></p>
+          <p>鼠标移上去图片放大类<code>img-scale</code></p>
+            
+                    	<p>&nbsp;</p>
+                    	<p><strong>演示</strong></p>
+<!--demo-->
+      
+                                 <a href="#"><img src="imgs/img.gif" class="img-scale" width="200"/></a>
+                            <!--//demo-->
+                       
+                        	<pre class="prettyprint">&lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;imgs/docs-img.jpg&quot; class=&quot;img-scale&quot; width=&quot;200&quot;/&gt;&lt;/a&gt;</pre>
+             
+         
+          <!--//图片-->
+          
+  
+  
+         
+      </div>
+    </div>
+  
+</div>
+ 
+ 
+<div class="wrapper footer">
+  <p>&copy; CopyRight 2002-2013, Wuhan Qietu Network Technology Co., Ltd. All Rights Reserved.<br/>
+    代码基于<a href="http://www.apache.org/licenses/LICENSE-2.0" rel="nofollow" target="_blank">Apache License v2.0</a>, 文档基于创作共享的 <a href="http://creativecommons.org/licenses/by-nc-sa/2.5/cn/" rel="nofollow" target="_blank">署名-非商业使用-相同方 式分享 2.5</a> 协议发布</p>
+</div>
+
+<script src="assets/js/jquery-1.7.1.min.js"></script>
+<script src="assets/js/slice.js"></script>
+<script src="js/prettify.js"></script>
+<script src="js/docs.js"></script>
+
+</body>
+</html>

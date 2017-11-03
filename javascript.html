@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>JS插件 - slice</title>
+<meta name="keywords" content="slice,中文css框架,css框架,开源css框架,css框架下载"/>
+<meta name="description" content="slice是一个开源中文 (X)HTML/CSS 框架 ,它的目的是减少你的css开发时间。它提供一个可靠的css基础去创建你的项目,能够用于网站的快速设计,通过重设和重建浏览器标准，可以让每个网站防 止枯燥的跨浏览器兼容性测试。"/>
+
+
+<link rel="stylesheet" href="assets/css/slice.css">
+<link rel="stylesheet" href="css/prettify.css" >
+
+<!--[if ie 6]>
+<link rel="stylesheet" href="assets/css/ie6.css">
+<![endif]-->
+<!--[if lt IE 9]>
+<script src="assets/js/html5.js"></script>
+<![endif]-->
+
+</head>
+<body>
+
+
+<div class="naver">
+	<div class="wrapper">
+    	<div class="brand">
+        	<a href="./index.html"><img src="imgs/logo.png"/></a>
+    	</div>
+    	<div class="gh">
+    		<a href="#"></a>
+    	</div>
+    	<div class="module">
+			<ul>
+				
+				<li> 
+					<a href="index.html">首页</a> 
+				</li>
+				<li> 
+					<a href="grid.html">12列栅格</a> 
+				</li>
+				<li> 
+					<a href="base.html">基础CSS</a> 
+				</li>
+				<li> 
+					<a href="widgets.html">组件</a> 
+				</li>
+				<li> 
+					<strong><a href="javascript.html">JS插件</a> </strong>
+				</li>
+				
+			</ul>
+	    </div>
+	    <div class="sub">
+	        <ul>
+	        	<li><a class="underline" href="http://www.qietu.com/" target="_blank" title="切图网" >切图（武汉）网络技术有限公司</a></li>
+	        </ul>
+	    </div>
+	</div>
+</div>
+
+
+<div class="heading">
+  <div class="wrapper">
+    <h2>JS插件</h2>
+    <h3>基于jquery，javascript的特效插件</h3>
+  </div>
+</div>
+<div class="wrapper">
+  <div class="row">
+    <div class="col3">
+      <ul class="sidebar">
+        <li class="selected"> <a href="#popup">弹窗</a></li>
+        <li><a href="#tooltip">气泡提醒</a></li>
+        <li><a href="#popover">弹出提示</a></li>
+        <li><a href="#slider">幻灯片</a></li>
+        <li><a href="#singlerolling">单行滚动</a></li>
+      </ul>
+    </div>
+    <div class="col9 docs-body">
+     
+        <p id="popup"><strong>弹窗</strong></p>
+      <p>通过<code>rel="dialog"</code>来调用</p>
+        <p>&nbsp;</p>
+        <p><strong>代码片段</strong></p>
+<pre class="prettyprint">&lt;div class=&quot;dialog&quot; style=&quot;display:block;&quot;&gt;<br>   	&lt;div class=&quot;dialog-head&quot;&gt;<br>    	编辑学校<br>        &lt;del&gt;×&lt;/del&gt;<br>    &lt;/div&gt;<br>    &lt;div class=&quot;dialog-body&quot;&gt;<br>    ...<br>    &lt;/div&gt;<br>    &lt;div class=&quot;dialog-foot&quot;&gt;<br>    	&lt;input name=&quot;&quot; type=&quot;btn&quot; value=&quot;确定&quot; class=&quot;btn blue&quot;&gt;<br>    	&lt;input name=&quot;&quot; type=&quot;btn&quot; value=&quot;取消&quot; class=&quot;btn&quot;&gt;<br>    &lt;/div&gt;<br>   &lt;/div&gt;</pre>
+        
+        <p>&nbsp;</p>
+        <p><strong>效果演示</strong></p>
+<div class="well" style=" background:#888;">
+              <!--演示开始-->
+              <div class="dialog" style="display:block; position:relative; top:auto; left:auto; margin:0 auto;">
+                <div class="dialog-head"> 编辑学校 <del>×</del> </div>
+                <div class="dialog-body">
+                  <p> 名称：
+                    <input name="" type="text">
+                  </p>
+                  <p> 省份：
+                    <select name="">
+                    </select>
+                    地区：
+                    <select name="">
+                    </select>
+                  </p>
+                  <p> 地址：
+                    <input name="" type="text">
+                  </p>
+                  <p> 级别：
+                    <select name="">
+                    </select>
+                    <input name="" type="text">
+                  </p>
+                  <p> 类型：
+                    <input name="" type="radio" value="">
+                    高中
+                    <input name="" type="radio" value="">
+                    初中
+                    <input name="" type="radio" value="">
+                    小学 </p>
+                </div>
+                <div class="dialog-foot">
+                  <input name="" type="button" value="确定" class="btn blue">
+                  <input name="" type="button" value="取消" class="btn">
+                </div>
+              </div>
+              <!--演示结束-->
+            </div>
+            
+            
+            <p>&nbsp;</p>
+            <p><strong>事件调用</strong></p>
+      <p> <a href="#dialog" class="btn" rel="dialog">点击我弹出POPUP窗口</a> </p>
+            <pre class="prettyprint">&lt;a href=&quot;#dialog&quot; class=&quot;btn&quot; rel=&quot;dialog&quot;&gt;点击我弹出对话框窗口&lt;/a&gt;</pre>
+           
+           <!--调用演示-->
+            <div class="dialog" id="dialog">
+              <div class="dialog-head"> 编辑学校 <del>×</del> </div>
+              <div class="dialog-body">
+                <p> 这里是内容 </p>
+              </div>
+              <div class="dialog-foot">
+                <input name="" type="button" value="确定" class="btn blue">
+                <input name="" type="button" value="取消" class="btn">
+              </div>
+            </div>
+            <!--调用演示结束-->
+            
+            
+         
+    
+        <p  id="tooltip">&nbsp;</p>
+        <p><strong>tooltip</strong></p>
+      <p>气泡提醒组件 通过<code>rel="tooltip"</code>来调用</p>
+        
+        <p>&nbsp;</p>
+        <p><strong>代码片段</strong></p>
+<pre class="prettyprint">&lt;a rel=&quot;tooltip&quot; title=&quot;slice是一个开源中文(X)HTML/CSS 框架&quot;&gt;slice&lt;/a&gt;</pre>
+      
+            <p>&nbsp;</p>
+            <p><strong>演示</strong></p>
+<!--demo-->
+            <div class="well"> <a rel="tooltip" title="slice是一个开源中文(X)HTML/CSS 框架">slice</a>是一个开源中文 (X)HTML/CSS 框架 ,它的目的是减少你的css开发时间。它提供一个可靠的css基础去创建你的项目,能够用于网站的快速设计,通过重设和重建浏览器标准，可以让每个网站防 止枯燥的跨浏览器兼容性测试。 </div>
+            <!--//demo-->
+            
+        
+   
+        <p  id="popover">&nbsp;</p>
+        <p><strong>popover</strong></p>
+      <p>气泡提醒组件 通过<code>rel="popover"</code>来调用</p>
+        
+        <pre class="prettyprint">&lt;a rel=&quot;popover&quot; title=&quot;slice是一个开源中文(X)HTML/CSS 框架&quot;&gt;slice&lt;/a&gt;</pre>
+        
+      
+            <p>&nbsp;</p>
+            <p><strong>演示</strong></p>
+<!--demo-->
+            <div class="well"> <a rel="popover" title="slice是一个开源中文(X)HTML/CSS 框架">slice</a>是一个开源中文 (X)HTML/CSS 框架 ,它的目的是减少你的css开发时间。它提供一个可靠的css基础去创建你的项目,能够用于网站的快速设计,通过重设和重建浏览器标准，可以让每个网站防 止枯燥的跨浏览器兼容性测试。 </div>
+            <!--//demo-->
+            
+       
+      <p id="slider">&nbsp;</p>
+      <p><strong>幻灯片</strong></p>
+<!--demo-->
+        <div class="slider">
+          <div class="slider-list">
+          	 <ul>
+             	<li style="display:none;">
+                    <h1>slice——响应css框架</h1>
+                    <p>web响应兼容ie6,ie7,ie8,firefox,chrome,iphone,ipad浏览器</p>
+                  </li>
+                  <li>
+                    <h1>slice——国产开源css框架</h1>
+                    <p>it's Made In China！如果你觉得好用就义无反顾的支持吧！</p>
+                  </li>
+             </ul>
+          </div>
+          <!--左右按钮-->
+          <div class="slider-prev">&lsaquo;</div>
+          <div class="slider-next">&rsaquo;</div>
+        </div>
+        <!--//demo-->
+        
+        <p>&nbsp;</p>
+        <p><strong>代码片段</strong></p>
+      <pre class="prettyprint">&lt;div class=&quot;slider&quot;&gt;<br>  &lt;div class=&quot;slider-list&quot;&gt;<br>    &lt;ul&gt;<br>      &lt;li style=&quot;display:none;&quot;&gt;
+      &lt;!--内容--&gt;<br>      &lt;/li&gt;<br>      &lt;li&gt;
+      &lt;!--内容--&gt;<br>      &lt;/li&gt;<br>    &lt;/ul&gt;<br>  &lt;/div&gt;<br>  &lt;!--左右按钮--&gt;<br>  &lt;div class=&quot;slider-prev&quot;&gt;&amp;lsaquo;&lt;/div&gt;<br>  &lt;div class=&quot;slider-next&quot;&gt;&amp;rsaquo;&lt;/div&gt;<br>&lt;/div&gt;</pre>
+     
+      
+      
+      
+      
+  
+      <p  id="singlerolling">&nbsp;</p>
+      <p><strong>单行滚动</strong></p>
+      <p>总结出非常常用的单行滚动效果，史上最简单的jQuery实现！代码更小。结构布局更简单。使用更方便。</p>
+        <!--演示开始-->
+        <div class="singlerolling" style="height:88px;">
+          <ul>
+            <li>这是第一行</li>
+            <li>这是第一行2</li>
+            <li>这是第一行2</li>
+            <li>这是第一行2</li>
+            <li>这是第一行2</li>
+            <li>这是第一行2</li>
+          </ul>
+        </div>
+        <!--演示结束-->
+       
+            <p>&nbsp;</p>
+            <p><strong>演示</strong></p>
+<!--演示开始-->
+            <div class="singlerolling">
+              <ul>
+                <li>这是第一行</li>
+                <li>这是第一行2</li>
+              </ul>
+            </div>
+            <!--演示结束-->
+            <p>&nbsp;</p>
+            <p><strong>代码片段</strong></p>
+      <pre class="prettyprint">&lt;div class=&quot;singlerolling&quot;&gt;<br>  &lt;ul&gt;<br>    &lt;li&gt;这是第一行&lt;/li&gt;<br>    &lt;li&gt;这是第一行2&lt;/li&gt;<br>  &lt;/ul&gt;<br>&lt;/div&gt;</pre>
+          
+          
+          
+          
+    </div>
+  </div>
+</div>
+<div class="wrapper footer">
+  <p>&copy; CopyRight 2002-2013, Wuhan Qietu Network Technology Co., Ltd. All Rights Reserved.<br/>
+    代码基于<a href="http://www.apache.org/licenses/LICENSE-2.0" rel="nofollow" target="_blank">Apache License v2.0</a>, 文档基于创作共享的 <a href="http://creativecommons.org/licenses/by-nc-sa/2.5/cn/" rel="nofollow" target="_blank">署名-非商业使用-相同方 式分享 2.5</a> 协议发布</p>
+</div>
+
+<script src="assets/js/jquery-1.7.1.min.js"></script>
+<script src="assets/js/slice.js"></script>
+<script src="js/prettify.js"></script>
+<script src="js/docs.js"></script>
+
+</body>
+</html>

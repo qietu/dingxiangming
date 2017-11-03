@@ -1,2 +1,198 @@
-欢迎来到切图网。
-http://www.qietu.com
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>新手上路 - 切图框架slice</title>
+<meta name="keywords" content="slice,中文css框架,css框架,开源css框架,css框架下载"/>
+<meta name="description" content="slice是一个开源中文 (X)HTML/CSS 框架 ,它的目的是减少你的css开发时间。它提供一个可靠的css基础去创建你的项目,能够用于网站的快速设计,通过重设和重建浏览器标准，可以让每个网站防 止枯燥的跨浏览器兼容性测试。"/>
+
+<link rel="stylesheet" href="assets/css/slice.css">
+<link rel="stylesheet" href="css/prettify.css" >
+
+<!--[if ie 6]>
+<link rel="stylesheet" href="assets/css/ie6.css">
+<![endif]-->
+
+<!--[if lt IE 9]>
+<script src="assets/js/html5.js"></script>
+<![endif]-->
+</head>
+
+<body>
+
+
+
+<div class="naver">
+	<div class="wrapper">
+    	<div class="brand">
+        	<a href="./index.html"><img src="imgs/logo.png"/></a>
+    	</div>
+    	<div class="gh">
+    		<a href="#"></a>
+    	</div>
+    	<div class="module">
+			<ul>
+				
+				<li> 
+					<strong><a href="index.html">首页</a> </strong>
+				</li>
+				<li> 
+					<a href="grid.html">12列栅格</a> 
+				</li>
+				<li> 
+					<a href="base.html">基础CSS</a> 
+				</li>
+				<li> 
+					<a href="widgets.html">组件</a> 
+				</li>
+				<li> 
+					<a href="javascript.html">JS插件</a> 
+				</li>
+				
+			</ul>
+	    </div>
+	    <div class="sub">
+	        <ul>
+	        	<li><a class="underline" href="http://www.qietu.com/" target="_blank" title="切图网" >切图（武汉）网络技术有限公司</a></li>
+	        </ul>
+	    </div>
+	</div>
+</div>
+
+<div class="heading">
+  <div class="wrapper">
+  	<h2>用户手册</h2>
+    <h3> Slice是一个开源中文 (X)HTML/CSS 框架 ,它的目的是减少你的css开发时间。它提供一个可靠的css基础去创建你的项目,能够用于网站的快速设计,通过重设和重建浏览器标准，可以让每个网站防   止枯燥的跨浏览器兼容性测试。你可以将他理解成一套模板，里面包含了大多数站点中所需要的那些css类。他很小，只有四个文件而已。总共不到6KB。</h3>
+  </div>
+</div>
+
+
+
+
+<div class="wrapper">
+    
+    <div class="row">
+    	<div class="col3">
+        	<ul class="sidebar">
+            <li class="selected">
+            <a href="#what">什么是slice？</a></li>
+            <li><a href="#ie6">关于ie6支持</a></li>
+            <li><a href="#download">下载</a></li>
+            <li><a href="#files">文件结构目录</a></li>
+            <li><a href="#template">正确加载</a></li>
+            <li><a href="#license">使用许可</a></li>
+            <li><a href="#feedback">反馈与建议</a></li>
+            </ul>
+        </div>
+        <div class="col9 docs-body">
+        
+      
+            <p><strong>响应式设计 </strong></p>
+            <p>可以根据浏览器的大小自动缩放和调整，对web标签的重构实现了最大化的浏览器支持，避免了枯燥乏味的浏览器兼容调整的烦恼。</p>
+            <p>&nbsp;</p>
+            <p><strong>JS插件的支持</strong></p>
+            <p>编入了常用的jquery插件，iepng透明插件，选项卡插件，幻灯片插件，lazyload插件，并且测试了其跨浏览器的兼容性。</p>
+            <p>&nbsp;</p>
+            <p><strong>授人鱼不如授人以渔</strong></p>
+            <p>8年始终专注web前端技术领域的开发与服务工作，为众多的网站提供了专业性的web前端服务，为了帮助更多的人，slice决定将技术分享。</p>
+            <p>&nbsp;</p>
+            <p><strong>适用于各类人群 </strong></p>
+            <p>无论你是专业的web前端开发工程师，还是设计师，或者仅仅是一个爱好者，slice框架都能够让您快速的建立一个标准美观的web网页。</p>
+            <p>&nbsp;</p>
+            <p><strong>适用于各种浏览器</strong></p>
+            <p>通过css重写技术，对web标签的重构实现了最大化的浏览器支持，避免了枯燥乏味的浏览器兼容调整的烦恼。</p>
+            <p>&nbsp;</p>
+          <p id="what"><strong>重要说明</strong></p>
+        
+       	  <p>关于slice.css文件。为了更好的拆分框架的内容，让用户能够方便的使用框架的某一个部分。slice.css核心文件代码中利用了 <code>@import url(&quot;icon.css&quot;);</code>的方式进行了调用。所以在使用本框架之前，需要有一点点css功底，并且建议将slice.css源代码大致浏览一遍。      </p>
+       	  <p>&nbsp;</p>
+       	  <p id="download"><strong>关于框架</strong></p>
+        	
+            
+            	  
+                 <p>slice是武汉切图网络技术有限公司推出的响应css框架，取其（切图）中文意思为slice！</p>
+                 <p>&nbsp;</p>
+          <p id="ie6"><strong>关于ie6支持</strong></p>
+         
+       	  <p>slice，一直延续了对ie6的支持，对于ie6等低版本支持的原理是这样的：slice提供了基本的网页元素和js组件，相对国外bs框架等优秀框架功能是非常简单的，布局也非常简洁，功能的简洁极大了减少了ie6下不兼容问题的产生，另外，slice通过对优化html自身结构和规范css代码书写，是兼容ie6的主要原因。并且我们不主张通过非正常手段来实现ie6兼容，这个是弊大于利的。</p>
+       	  <p>&nbsp;</p>
+       	  <p id="files"><strong>文件结构</strong></p>
+		  <p>slice代码核心框架。</p>
+            
+          
+          	
+       	    <pre class="prettyprint"> slice-开源中文css框架/    
+	├── assets/css/    
+	│   ├── slice.css     
+	├── assets/js/
+	│   ├── jquery.js
+	│   ├── slice.js    
+	└── img/        </pre>
+         
+          
+        
+		  <p id="template"><strong>正确的加载</strong></p>
+    
+       	  <pre class="prettyprint">&lt;!DOCTYPE html&gt;<br>&lt;html&gt;<br>&lt;head&gt;<br>&lt;meta charset=&quot;gb2312&quot; /&gt;<br>&lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=7&quot; /&gt;<br>&lt;title&gt;untitled&lt;/title&gt;<br> <br>&lt;!--用于iphone开发--&gt;<br>&lt;meta content=&quot;width=device-width,initial-scale=1&quot; name=&quot;viewport&quot;&gt; <br>&lt;link rel=&quot;stylesheet&quot; href=&quot;assets/css/slice.css&quot;&gt; 
+
+&lt;!--[if lt IE 9]&gt;<br>&lt;script src=&quot;assets/js/html5.js&quot;&gt;&lt;/script&gt;<br>&lt;![endif]--&gt;
+
+&lt;script src=&quot;assets/js/jquery.js&quot;&gt;&lt;/script&gt; <br>&lt;script src=&quot;assets/js/slice.js&quot;&gt;&lt;/script&gt;  
+
+&lt;/head&gt;<br>&lt;body&gt;<br>&lt;!--内容--&gt;<br>&lt;/body&gt;<br>&lt;/html&gt;</pre>
+         
+          
+      
+		  <p id="license">&nbsp;</p>
+		  <p><strong>使用许可</strong></p>
+		  <p>代码基于<a target="_blank" rel="nofollow" href="http://www.apache.org/licenses/LICENSE-2.0">Apache License v2.0</a>, 文档基于创作共享的 <a target="_blank" rel="nofollow" href="http://creativecommons.org/licenses/by-nc-sa/2.5/cn/">署名-非商业使用-相同方 式分享 2.5</a> 协议发布</p>
+           <p>赋予你的权力</p>
+           
+           
+<div class="alert success">
+            	<ul>
+                	<li>
+                    	免费下载和使用slice全部或部分用于个人，或商业用途
+                    </li>
+                	<li>
+                    	修改、扩展slice代码
+                    </li>
+                </ul>
+          </div>
+            
+             <p>禁止以下行为</p>
+            <div class="alert error">
+            	<ul>
+                	<li>
+                    	使用slice代码部分或全部，需保留源代码中的版权申明，禁止删除、修改版权再次发布
+                    </li>
+                </ul>
+            </div>      
+        
+          
+		  <p  id="feedback">&nbsp;</p>
+		  <p><strong>反馈及建议</strong></p>
+		  <p>反馈信息的正确途径，以确保我们可以收到</p>
+             <p>提交你反馈的内容邮件到 <a href="mailto:fuwu@qietu.com">fuwu@qietu.com</a> </p>
+         
+
+          
+          
+          
+      </div>
+    </div>
+</div>
+
+<div class="wrapper footer">
+	<p>&copy; CopyRight 2002-2013, Wuhan Qietu Network Technology Co., Ltd. All Rights Reserved.<br/>
+	代码基于<a href="http://www.apache.org/licenses/LICENSE-2.0" rel="nofollow" target="_blank">Apache License v2.0</a>, 文档基于创作共享的 <a href="http://creativecommons.org/licenses/by-nc-sa/2.5/cn/" rel="nofollow" target="_blank">署名-非商业使用-相同方 式分享 2.5</a> 协议发布</p>
+</div>
+
+<script src="assets/js/jquery-1.7.1.min.js"></script> 
+<script src="assets/js/slice.js"></script> 
+<script src="js/prettify.js"></script>
+<script src="js/docs.js"></script>
+
+</body>
+</html> 

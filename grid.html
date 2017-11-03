@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>栅格系统 - slice</title>
+<meta name="keywords" content="slice,中文css框架,css框架,开源css框架,css框架下载"/>
+<meta name="description" content="slice是一个开源中文 (X)HTML/CSS 框架 ,它的目的是减少你的css开发时间。它提供一个可靠的css基础去创建你的项目,能够用于网站的快速设计,通过重设和重建浏览器标准，可以让每个网站防 止枯燥的跨浏览器兼容性测试。"/>
+
+
+<link rel="stylesheet" href="assets/css/slice.css">
+<link rel="stylesheet" href="css/prettify.css" >
+
+<!--[if ie 6]>
+<link rel="stylesheet" href="assets/css/ie6.css">
+<![endif]-->
+
+<!--[if lt IE 9]>
+<script src="assets/js/html5.js"></script>
+<![endif]-->
+</head>
+
+<body>
+
+
+<div class="naver">
+	<div class="wrapper">
+    	<div class="brand">
+        	<a href="./index.html"><img src="imgs/logo.png"/></a>
+    	</div>
+    	<div class="gh">
+    		<a href="#"></a>
+    	</div>
+    	<div class="module">
+			<ul>
+				
+				<li> 
+					<a href="index.html">首页</a> 
+				</li>
+				<li> 
+					<strong><a href="grid.html">12列栅格</a></strong> 
+				</li>
+				<li> 
+					<a href="base.html">基础CSS</a> 
+				</li>
+				<li> 
+					<a href="widgets.html">组件</a> 
+				</li>
+				<li> 
+					<a href="javascript.html">JS插件</a> 
+				</li>
+				
+			</ul>
+	    </div>
+	    <div class="sub">
+	        <ul>
+	        	<li><a class="underline" href="http://www.qietu.com/" target="_blank" title="切图网" >切图（武汉）网络技术有限公司</a></li>
+	        </ul>
+	    </div>
+	</div>
+</div>
+
+
+<div class="heading">
+  <div class="wrapper">
+  	<h2>栅格系统</h2>
+    <h3>基于12列栅格化格子系统 ，4种分辨率响应，为您灵活的打造网页的排版结构体系。</h3>
+  </div>
+</div>
+
+
+<div class="wrapper">
+	<div class="row">
+    	<div class="col3">
+        	<div class="sidebar">
+        		<ul>
+	            <li class="selected"><a href="#grid">栅格系统</a></li>
+	            <li><a href="#fill">填补空缺</a></li>
+	            <li><a href="#multiple">多重嵌套</a></li>
+	            <li><a href="#percent">百分比栅格</a></li>
+	            <li><a href="#show-hide">显示与隐藏</a></li>
+	            </ul>
+        	</div>
+        </div>
+        <div class="col9 docs-body">
+        	
+            <div class="part" id="grid">
+            	<h4>栅格系统可以相应4种分辨率，1200，980，768，<768（980，和960之间选择了980）</h4>
+            	<p>&nbsp;</p>
+            	<!--演示-->
+            <p><strong>栅格系统</strong></p>
+     		<p>默认12列的单元格栅格系统</p>
+     		<p>&nbsp;</p>
+     		<p><strong>栅格系统的基本写法</strong></p>
+    <p>先写一行<code>class="row"</code>,行的里面写列（即格子系统）<code>class="gird"</code> 1~12的英文单词被作为了栅格系统的12列格子的命名。</p>
+    <pre class="prettyprint">&lt;div class=&quot;row&quot;&gt;<br>  &lt;div class=&quot;col5 &quot;&gt;
+    &lt;!--内容--&gt;
+  &lt;/div&gt;<br>  &lt;div class=&quot;col4 &quot;&gt;
+    &lt;!--内容--&gt;
+  &lt;/div&gt;<br>&lt;/div&gt;</pre>
+    
+    <p>&nbsp;</p>
+    <p><strong>演示</strong></p>
+    <div class="row">
+	<div class="col5 ">
+        <p class="bordered">&nbsp;</p>
+	</div>
+	<div class="col4 ">
+		<p class="bordered">&nbsp;</p>
+	</div>
+  </div>
+
+
+  </div>
+  
+  
+  
+  <div class="part" id="fill">
+            <!--演示-->
+            <p>&nbsp;</p>
+            <p><strong>填补空缺（移位）</strong></p>
+        <p>可以通过 <code>.fill*</code>的写法让 col12列栅格系统列发生偏移，例如 <code>.fill1</code>将会让列往右偏移1个格子的宽度。</p>
+     		
+    <pre class="prettyprint">&lt;div class=&quot;row&quot;&gt;<br>  &lt;div class=&quot;col4 fill1&quot;&gt;
+    &lt;!--内容--&gt;
+  &lt;/div&gt;<br>  &lt;div class=&quot;col4 &quot;&gt;
+    &lt;!--内容--&gt;
+  &lt;/div&gt;<br>&lt;/div&gt;</pre>
+    
+    <p>&nbsp;</p>
+    <p><strong>演示</strong></p>
+    <div class="row">
+	<div class="col1 fill1">
+        <p class="bordered">fill1</p>
+	</div>
+	<div class="clear">
+	</div>
+	<div class="col1 fill2">
+		<p class="bordered">fill2</p>
+	</div>
+	<div class="clear">
+	</div>
+	<div class="col1 fill3">
+        <p class="bordered">fill3</p>
+	</div>
+	<div class="clear">
+	</div>
+	<div class="col1 fill4">
+        <p class="bordered">fill4</p>
+	</div>
+	<div class="clear">
+	</div>
+	<div class="col1 fill5">
+        <p class="bordered">fill5</p>
+	</div>
+	<div class="clear">
+	</div>
+	<div class="col1 fill6">
+        <p class="bordered">fill6</p>
+	</div>
+	<div class="clear">
+	</div>
+	<div class="col1 fill7">
+        <p class="bordered">fill7</p>
+	</div>
+	<div class="clear">
+	</div>
+	<div class="col1 fill8">
+        <p class="bordered">fill8</p>
+	</div>
+  </div>
+
+
+  </div>
+  
+  
+  <div class="part" id="multiple">
+  
+  <p>&nbsp;</p>
+  <p><strong>多重嵌套</strong></p>
+  <p>实现栅格系统的多重嵌套 嵌套依然先写一行<code>class="row"</code></p>
+  
+
+  <pre class="prettyprint">&lt;div class=&quot;row&quot;&gt;<br>  &lt;div class=&quot;col6 &quot;&gt;<br>    &lt;div class=&quot;row&quot;&gt;<br>      &lt;div class=&quot;col3&quot;&gt;<br>        &lt;!--内容--&gt; <br>      &lt;/div&gt;<br>      &lt;div class=&quot;col3&quot;&gt;<br>        &lt;!--内容--&gt; <br>      &lt;/div&gt;<br>    &lt;/div&gt;<br>  &lt;/div&gt;<br>  &lt;div class=&quot;col3 &quot;&gt;<br>    &lt;!--内容--&gt; <br>  &lt;/div&gt;<br>&lt;/div&gt;
+  </pre>
+  
+  <p>&nbsp;</p>
+  <p><strong>演示</strong></p>
+  <div class="row">
+	<div class="col6 ">
+        <div class="row">
+        	<div class="col3">
+            	<p class="bordered">&nbsp;</p>
+            </div>
+        	<div class="col3">
+            	<p class="bordered">&nbsp;</p>
+            </div>
+        </div>
+	</div>
+	<div class="col3 ">
+		<p class="bordered">&nbsp;</p>
+	</div>
+  </div>
+  
+    
+    <p>&nbsp;</p>
+    <p><strong>完整的栅格系统演示</strong></p>
+    <div class="row">
+    	
+         <div class="col9 ">
+        <p class="bordered">&nbsp;        </p>
+  </div>
+  
+  
+  
+  <div class="clear"></div>
+  <div class="col1">
+    <p class="bordered">&nbsp;</p>
+  </div>
+  <div class="col8">
+    <p class="bordered">&nbsp;</p>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  <div class="clear"></div>
+  <div class="col2">
+    <p class="bordered">&nbsp;</p>
+  </div>
+  <div class="col7">
+   <p class="bordered">&nbsp;</p>
+  </div>
+  
+  
+  
+  
+  
+  
+  <div class="clear"></div>
+  <div class="col3">
+   <p class="bordered">&nbsp;</p>
+  </div>
+  <div class="col6">
+    <p class="bordered">&nbsp;</p>
+  </div>
+  
+  
+  
+  
+  
+  <div class="clear"></div>
+  <div class="col4">
+    <p class="bordered">&nbsp;</p>
+  </div>
+  <div class="col5">
+    <p class="bordered">&nbsp;</p>
+  </div>
+  
+  
+  
+  
+  
+  
+  <div class="clear"></div>
+  <div class="col5">
+    <p class="bordered">&nbsp;</p>
+  </div>
+  <div class="col4">
+    <p class="bordered">&nbsp;</p>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  <div class="clear"></div>
+  <div class="col6">
+    <p class="bordered">&nbsp;</p>
+  </div>
+  <div class="col3">
+    <p class="bordered">&nbsp;</p>
+  </div>
+  
+  
+  
+  <div class="clear"></div>
+  <div class="col7">
+    <p class="bordered">&nbsp;</p>
+  </div>
+  <div class="col2">
+    <p class="bordered">&nbsp;</p>
+  </div>
+  
+  
+  <div class="clear"></div>
+  <div class="col8">
+    <p class="bordered">&nbsp;</p>
+  </div>
+  <div class="col1">
+    <p class="bordered">&nbsp;</p>
+  </div>
+  
+ 
+  
+  
+  <div class="clear"></div>
+  <div class="col1">
+    <p class="bordered">&nbsp;</p>
+  </div>
+  <div class="col1">
+    <p class="bordered">&nbsp;</p>
+  </div>
+  <div class="col1">
+    <p class="bordered">&nbsp;</p>
+  </div>
+  <div class="col1">
+    <p class="bordered">&nbsp;</p>
+  </div>
+  <div class="col1">
+    <p class="bordered">&nbsp;</p>
+  </div>
+  <div class="col1">
+   <p class="bordered">&nbsp;</p>
+  </div>
+  <div class="col1">
+    <p class="bordered">&nbsp;</p>
+  </div>
+  <div class="col1">
+    <p class="bordered">&nbsp;</p>
+  </div>
+  <div class="col1">
+    <p class="bordered">&nbsp;</p>
+  </div>
+  </div>
+            <!--演示-->
+            
+            </div>
+         
+            
+            
+            <div class="part" id="percent">
+            <p>&nbsp;</p>
+            <p><strong>百分比栅格（流式布局）</strong></p>
+            <p>100%百分比格子系统，应使用者要求，新增了百分比的栅格系统，此演示仅为抛石引玉，百分比栅格系统经过测试在实际应用中还有很多问题需要解决，我们期待与使用者一同探讨解决！<font color="red">项目使用需谨慎！</font> <code>.row-flow</code></p>
+
+
+            <!--百分比栅格-->
+           
+            	
+
+<pre class="prettyprint">&lt;div class=&quot;row row-flow&quot;&gt;
+  <span>&lt;!--内容--&gt;</span>
+&lt;/div&gt;</pre>
+
+
+
+<div class="row row-flow">
+	 <div class="col12 ">
+        <p class="bordered">&nbsp;        </p>
+  </div>
+  
+  
+  
+  <div class="clear"></div>
+  <div class="col1">
+    <p class="bordered">&nbsp;</p>
+  </div>
+  <div class="col11">
+    <p class="bordered">&nbsp;</p>
+  </div>
+  
+  <div class="clear"></div>
+  <div class="col2">
+    <p class="bordered">&nbsp;</p>
+  </div>
+  <div class="col10">
+   <p class="bordered">&nbsp;</p>
+  </div>
+  
+  
+  
+  
+  
+  
+  <div class="clear"></div>
+  <div class="col3">
+   <p class="bordered">&nbsp;</p>
+  </div>
+  <div class="col9">
+    <p class="bordered">&nbsp;</p>
+  </div>
+  
+  
+  
+  
+  
+  <div class="clear"></div>
+  <div class="col4">
+    <p class="bordered">&nbsp;</p>
+  </div>
+  <div class="col8">
+    <p class="bordered">&nbsp;</p>
+  </div>
+  
+  
+  
+  
+  
+  
+  <div class="clear"></div>
+  <div class="col5">
+    <p class="bordered">&nbsp;</p>
+  </div>
+  <div class="col7">
+    <p class="bordered">&nbsp;</p>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  <div class="clear"></div>
+  <div class="col6">
+    <p class="bordered">&nbsp;</p>
+  </div>
+  <div class="col6">
+    <p class="bordered">&nbsp;</p>
+  </div>
+  
+  
+  
+  <div class="clear"></div>
+  <div class="col7">
+    <p class="bordered">&nbsp;</p>
+  </div>
+  <div class="col5">
+    <p class="bordered">&nbsp;</p>
+  </div>
+  
+  
+  <div class="clear"></div>
+  <div class="col8">
+    <p class="bordered">&nbsp;</p>
+  </div>
+  <div class="col4">
+    <p class="bordered">&nbsp;</p>
+  </div>
+  
+ 
+</div>
+<!--百分比栅格-->
+           
+            </div>
+
+
+
+
+            <!--显示与隐藏-->
+<div class="part" id="show-hide">
+	
+            <p>&nbsp;</p>
+            <p><strong>显示与隐藏</strong></p>
+        <p>设置了显示与隐藏类，可以用于在不设置元素在不同设备下的显示与隐藏</p>
+          
+
+
+            <!--demo-->
+            show-pc,  show-pad, show-phone, hide-pc,hide-pad, hide-phone
+            
+            <!--//demo-->
+           
+            </div>
+            <!--//显示与隐藏-->
+            
+            
+        </div>
+    </div>
+	
+</div>
+
+
+
+<div class="wrapper footer">
+	<p>&copy; CopyRight 2002-2013, Wuhan Qietu Network Technology Co., Ltd. All Rights Reserved.<br/>
+	代码基于<a href="http://www.apache.org/licenses/LICENSE-2.0" rel="nofollow" target="_blank">Apache License v2.0</a>, 文档基于创作共享的 <a href="http://creativecommons.org/licenses/by-nc-sa/2.5/cn/" rel="nofollow" target="_blank">署名-非商业使用-相同方 式分享 2.5</a> 协议发布</p>
+</div>
+
+<script src="assets/js/jquery-1.7.1.min.js"></script> 
+<script src="assets/js/slice.js"></script> 
+<script src="js/prettify.js"></script>
+<script src="js/docs.js"></script>
+
+</body>
+</html>
+

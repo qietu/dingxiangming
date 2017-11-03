@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <link rel="icon" href="http://fian.my.id/static/favicon.png" />
+        <meta name="msapplication-tap-highlight" content="no"/> 
+
+        <title>Waves</title>
+       
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+     
+       
+        <link rel="stylesheet" type="text/css" href="prims.css">
+        <link rel="stylesheet" type="text/css" href="snarl.min.css">
+        <link rel="stylesheet" type="text/css" href="waves.min.css?v=0.7.4">
+
+        <link rel="stylesheet" type="text/css" href="style.css">
+
+       
+        
+        <script type="text/javascript" src="prims.js"></script>
+        <script type="text/javascript" src="snarl.min.js"></script>
+        <script type="text/javascript" src="waves.min.js?v=0.7.1"></script>
+        <script type="text/javascript" src="jquery.js"></script>
+
+    </head>
+    <body>
+      
+
+        
+        <a href="#examples" class="waves-effect waves-button waves-float">See the examples</a>
+        
+<div id="landing" class="section hide">
+    <h1>Waves</h1>
+    <p>Click effect inspired by Google's Material Design</p>
+    <p>v0.7.4</p>
+    <div class="button">
+        
+        <br>
+        <span>Hint: click button or background</span>
+    </div>
+</div>;
+
+        <div id="example" class="section page hide">
+
+    <h1>Examples</h1>
+
+   
+
+    
+
+    <div id="box-other" class="box shadow">
+        <h2>DIVs &amp; Images</h2>
+        <a  class="top-button" title="Show Source" data-code="other">
+            <i class="fa fa-code"></i>
+        </a>
+
+        <div class="boxes flat-box">Flat Box</div>
+        <div class="boxes float-box">Float Box</div>
+        <div class="clear"></div>
+
+        <p class="text-center">
+            <img class="waves-image" src="https://farm2.staticflickr.com/1297/1091511802_2fb2451ecc_n.jpg">
+        </p>
+
+        <script type="text/javascript">
+            Waves.attach('.flat-box', ['waves-block']);
+            Waves.attach('.float-box', ['waves-block', 'waves-float']);
+            Waves.attach('.waves-image');
+        </script>
+
+        <p class="text-center">
+            Image Source: <a href="https://www.flickr.com/photos/aigle_dore/5238554034/" target="_blank">&copy; Moyan Brenn. Flickr</a>
+        </p>
+    </div>
+
+    <div id="box-action" class="box shadow">
+        <h2>Action/Event</h2>
+        <a class="top-button" title="Show Source" data-code="action">
+            <i class="fa fa-code"></i>
+        </a>
+
+        <p>Works fully with jQuery and JavaScript click event handlers, like <a href="http://hoxxep.github.io/Snarl" target="_blank">Snarl</a></p>
+
+        <style>
+            #snarl-demo {
+                background:#04d654;
+                color: #fff;
+            }
+        </style>
+
+        <p class="text-center">
+            <button id="snarl-demo">Click Me!</button>
+        </p>
+
+        <script type="text/javascript">
+            Waves.attach('#snarl-demo', ['waves-button', 'waves-float']);
+
+            Snarl.setDefaultOptions({
+                timeout: 5000
+            });
+
+            $('#snarl-demo').click(function() {
+                Snarl.addNotification({
+                    title: 'Snarl Notification',
+                    text: 'You clicked the Waves button!'
+                });
+            });
+        </script>
+    </div>
+</div>;
+        
+        
+
+        
+        
+        <script type="text/javascript">
+            
+           
+
+
+            $(document).on('ready', function() {
+
+                // Init Waves
+                Waves.init();
+              
+
+
+                
+            });
+
+        </script>
+    </body>
+</html>

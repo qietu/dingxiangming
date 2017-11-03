@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>css组件 - slice</title>
+<meta name="keywords" content="slice,中文css框架,css框架,开源css框架,css框架下载"/>
+<meta name="description" content="slice是一个开源中文 (X)HTML/CSS 框架 ,它的目的是减少你的css开发时间。它提供一个可靠的css基础去创建你的项目,能够用于网站的快速设计,通过重设和重建浏览器标准，可以让每个网站防 止枯燥的跨浏览器兼容性测试。"/>
+
+
+<link rel="stylesheet" href="assets/css/slice.css">
+<link rel="stylesheet" href="css/prettify.css" >
+
+<!--[if ie 6]>
+<link rel="stylesheet" href="assets/css/ie6.css">
+<![endif]-->
+
+<!--[if lt IE 9]>
+<script src="assets/js/html5.js"></script>
+<![endif]-->
+
+
+</head>
+
+<body>
+
+<div class="naver">
+	<div class="wrapper">
+    	<div class="brand">
+        	<a href="./index.html"><img src="imgs/logo.png"/></a>
+    	</div>
+    	<div class="gh">
+    		<a href="#"></a>
+    	</div>
+    	<div class="module">
+			<ul>
+				
+				<li> 
+					<a href="index.html">首页</a> 
+				</li>
+				<li> 
+					<a href="grid.html">12列栅格</a> 
+				</li>
+				<li> 
+					<a href="base.html">基础CSS</a> 
+				</li>
+				<li> 
+					<strong><a href="widgets.html">组件</a> </strong>
+				</li>
+				<li> 
+					<a class="underline" href="javascript.html">JS插件</a> 
+				</li>
+				
+			</ul>
+	    </div>
+	    <div class="sub">
+	        <ul>
+	        	<li><a href="http://www.qietu.com/" target="_blank" title="切图网" >切图（武汉）网络技术有限公司</a></li>
+	        </ul>
+	    </div>
+	</div>
+</div>
+
+
+<div class="heading">
+  <div class="wrapper">
+  	<h2>组件</h2>
+    <h3>定义了一些常用的组件以及样式，能够快速构建页头，导航，选项卡，页脚，子菜单，分页等</h3>
+  </div>
+</div>
+
+
+
+<div class="wrapper">
+
+<div class="row">
+    	<div class="col3">
+        	<ul class="sidebar nojs">
+            <li class="selected">
+            <a href="#spring">头部告示</a></li>
+            <li><a href="#naver">头部导航</a></li>
+            <li><a href="#taber">选项卡</a></li>
+            <li><a href="#sidebar">侧边栏</a></li>
+            <li><a href="#current">面包屑</a></li>
+            <li><a href="#pager">分页</a></li>
+            <li><a href="#tag">tag标签</a></li>
+            <li><a href="#footer">页尾</a></li>
+            <li><a href="#heading">heading</a></li>
+            <li><a href="#alert">提示信息</a></li>
+            <li><a href="#progress">进度条</a></li>
+            <li><a href="#well">消息墙</a></li>
+            <li><a href="#masthead">masthead</a></li>
+            <li><a href="#timeline">时间轴</a></li>
+            <li><a href="#pricing">价目表</a></li>
+            <li><a href="#counter">计数器</a></li>
+            <li><a href="abs-faq.html">流程帮助</a></li>
+            <li><a href="imgroll.html">图片滚动</a></li>
+            </ul>
+        </div>
+        <div class="col9 docs-body">
+        
+         	<p id="spring"><strong>边框</strong></p>
+          <p>头部告示<small>黄色区域引人注目</small></p>
+              
+                            <p>&nbsp;</p>
+                            <p><strong>演示</strong></p>
+<!--demo-->
+                                <div class="spring">
+                                  	<div class="wrapper" style="width:auto; padding-left:20px; padding-right:20px;">
+                                        这是一段警告
+                                      <del>&times;</del>     
+                                	</div>       
+                           	  </div>					
+     
+                                <!--//demo-->
+                           
+                                <pre class="prettyprint">&lt;div class=&quot;spring&quot;&gt;<br>&lt;div class=&quot;wrapper&quot;&gt;<br>这是一段警告<br>&lt;del&gt;&amp;times;&lt;/del&gt;     <br>&lt;/div&gt;       <br>&lt;/div&gt;	</pre>
+                  
+        
+              
+              <p id="spring">&nbsp;</p>
+              <p><strong>边框</strong></p>
+          <p>歌词来自《Whatever Will Be, Will Be》</p>
+                
+                            <p>&nbsp;</p>
+                            <p><strong>演示</strong></p>
+<!--demo-->
+                                <p class="bdr bdr-red txt-red pd-small">When I was just a little girl,</p>
+<p class="bdr bdr-yellow txt-yellow pd-small">I asked my mother, </p>
+<p class="bdr bdr-blue txt-blue pd-small">"What will I be?</p>
+<p class="bdr bdr-green txt-green pd-small">Will I be pretty?</p>
+<p class="bdr pd-small">Will I be rich?"</p>					
+     
+                                <!--//demo-->
+                           
+                                <pre class="prettyprint">&lt;p class=&quot;bdr bdr-red txt-red pd-small&quot;&gt;When I was just a little girl,&lt;/p&gt;<br>&lt;p class=&quot;bdr bdr-yellow txt-yellow pd-small&quot;&gt;I asked my mother, &lt;/p&gt;<br>&lt;p class=&quot;bdr bdr-blue txt-blue pd-small&quot;&gt;&quot;What will I be?&lt;/p&gt;<br>&lt;p class=&quot;bdr bdr-green txt-green pd-small&quot;&gt;Will I be pretty?&lt;/p&gt;<br>&lt;p class=&quot;bdr pd-small&quot;&gt;Will I be rich?&quot;&lt;/p&gt;</pre>
+                 
+            
+                          
+                          
+         
+            
+            
+      
+            	<p id="naver">&nbsp;</p>
+            	<p><strong>头部导航 </strong></p>
+       	  <p>无色 添加<code>class="naver unstyled"</code>调用</p>
+    
+	
+   		<!--演示开始-->
+        <div class="naver">
+            <div class="">
+                <div class="brand">
+                  <a href="./index.html"><img src="imgs/logo.png"/></a>                </div>
+       		  <div class="collapse">菜单</div>
+                <div class="module">
+                    <ul>
+                    	<li><a href="#">概述</a></li>
+                        <li><a href="#">框架</a></li>
+                      
+                    </ul>
+                </div>
+         
+                <div class="sub">
+                    <a href="#">关于</a>                
+                    </div>
+            </div>
+        </div>
+        <!--演示结束--> 
+   		
+  
+    
+   
+    
+	
+    
+    <p>&nbsp;</p>
+    <p><strong>代码片段</strong></p>
+<pre class="prettyprint">&lt;div class=&quot;naver&quot;&gt;<br>	&lt;div class=&quot;wrapper&quot;&gt;<br>    	&lt;div class=&quot;logo&quot;&gt;<br><br>        &lt;/div&gt;<br>    	&lt;div class=&quot;module&quot;&gt;<br>&lt;ul&gt;<br>                &lt;li&gt;<br>                    &lt;strong&gt;&lt;a href=&quot;#&quot; class=&quot;selected&quot;&gt;菜单1&lt;/a&gt;&lt;/strong&gt;<br>                &lt;/li&gt;<br>                &lt;li&gt;<br>                    &lt;strong&gt;&lt;a href=&quot;###&quot;&gt;菜单2&lt;/a&gt;&lt;/strong&gt;<br>                    &lt;div class=&quot;droper&quot;&gt;<br>                        &lt;a href=&quot;#&quot;&gt;子菜单1&lt;/a&gt;<br>                        &lt;a href=&quot;#&quot; target=&quot;_blank&quot;&gt;子菜单2&lt;/a&gt;<br>                        &lt;a href=&quot;#&quot; target=&quot;_blank&quot;&gt;子菜单3&lt;/a&gt;<br>                        &lt;a href=&quot;#&quot; target=&quot;_blank&quot;&gt;子菜单4&lt;/a&gt;<br>                        &lt;a href=&quot;#&quot; target=&quot;_blank&quot;&gt;子菜单5&lt;/a&gt;<br>                    &lt;/div&gt;<br>                &lt;/li&gt;<br><br>            &lt;/ul&gt;<br>        &lt;/div&gt;<br>        &lt;div class=&quot;sub&quot;&gt;<br>        	&lt;a href=&quot;#&quot;&gt;例子&lt;/a&gt;<br>        	&lt;a href=&quot;#&quot;&gt;关于&lt;/a&gt;<br>        &lt;/div&gt;<br>    &lt;/div&gt;<br>&lt;/div&gt;</pre>
+           
+            
+            
+            <div class="part">
+            <p id="taber" >&nbsp;</p>
+            <p ><strong>选项卡</strong></p>
+            <p>带js的选项卡效果
+      <!--选项卡开始-->
+      </p>
+
+<div class="taber">
+           		<div class="head">
+               	  <a href="#" lang="t1" class="selected">典故</a>
+               	  <a href="#" lang="t2">关于</a>
+               	  <a href="#" lang="t3">其他</a>
+               	  <a href="#" lang="t4">其他</a>                </div>
+<div class="body" id="t1">
+       	slice犹急切。 何其芳《画梦录·炉边夜话》：“但这里的人从没有一个见过海的，辽远使我更加slice了。这里的slice是比渴望还要渴望的心情，slice是一种需求，是一种梦想，是激励我们实现目标的动力。                </div>
+                <div class="body" id="t2" style="display:none;">
+       	slice是一个开源中文 (X)HTML/CSS 框架 ,它的目的是减少你的css开发时间。它提供一个可靠的css基础去创建你的项目,能够用于网站的快速设计,通过重设和重建浏览器标准，可以让每个网站防 止枯燥的跨浏览器兼容性测试。你可以将他理解成一套模板，里面包含了大多数站点中所需要的那些css类。他很小，只有四个文件而已。总共不到6KB。        </div>
+                <div class="body" id="t3" style="display:none;">
+                	更多相关资讯        </div>
+                <div class="body" id="t4" style="display:none;">
+                	更多相关资讯        </div>
+           </div>
+           <!--选项卡结束-->
+           
+           <p>&nbsp;</p>
+           <p><strong>代码片段</strong></p>
+           <pre class="prettyprint">&lt;div class=&quot;taber&quot;&gt;<br>           		&lt;div class=&quot;head&quot;&gt;<br>               	  &lt;a href=&quot;#&quot; lang=&quot;t1&quot; class=&quot;selected&quot;&gt;典故&lt;/a&gt;<br>               	  &lt;a href=&quot;#&quot; lang=&quot;t2&quot;&gt;关于&lt;/a&gt;<br>               	  &lt;a href=&quot;#&quot; lang=&quot;t3&quot;&gt;其他&lt;/a&gt;<br>               	  &lt;a href=&quot;#&quot; lang=&quot;t4&quot;&gt;其他&lt;/a&gt;<br>                &lt;/div&gt;<br>&lt;div class=&quot;body&quot; id=&quot;t1&quot;&gt;<br>								xxxxxxxx<br>                &lt;/div&gt;<br>                &lt;div class=&quot;body&quot; id=&quot;t2&quot; style=&quot;display:none;&quot;&gt;<br>                sssssssss<br>        &lt;/div&gt;<br>                &lt;div class=&quot;body&quot; id=&quot;t3&quot; style=&quot;display:none;&quot;&gt;<br>                sssssss<br>        &lt;/div&gt;<br>                &lt;div class=&quot;body&quot; id=&quot;t4&quot; style=&quot;display:none;&quot;&gt;<br>                ssss<br>        &lt;/div&gt;<br>           &lt;/div&gt;</pre>
+   	  
+  	
+          
+            
+         
+            <p id="sidebar">&nbsp;</p>
+            <p><strong>侧边栏</strong></p>
+            <p>侧边栏菜单，常用于子菜单的展示</p>
+             <pre class="prettyprint">&lt;ul class=&quot;sidebar&quot;&gt;<br>&lt;li class=&quot;selected&quot;&gt;
+&lt;a href=&quot;#&quot;&gt;栏目&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;菜单&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;菜单&lt;/a&gt;&lt;/li&gt;<br>&lt;/ul&gt;
+            </pre>
+
+    	 
+        	<ul class="sidebar nojs">
+            	<li class="selected"><a href="#">栏目</a></li>
+            	<li><a href="#">菜单</a></li>
+            	<li><a href="#">菜单</a></li>
+            </ul>
+        
+ 
+           
+            
+            
+    
+            
+            	<p id="current">&nbsp;</p>
+            	<p><strong>面包屑</strong></p>
+           	  <pre class="prettyprint">&lt;div class=&quot;current&quot;&gt;
+&lt;a href=&quot;#&quot;&gt;首页&lt;/a&gt;&amp;gt; 
+&lt;a href=&quot;#&quot;&gt;概述&lt;/a&gt;&amp;gt;
+&lt;span&gt;组件&lt;/span&gt;
+&lt;/div&gt;</pre>
+  
+        	<!--demo-->
+            <div class="current">
+            	<a href="#">首页</a>
+          &gt; <a href="#">概述</a> &gt; 组件</div>
+        	<!--//demo-->
+        	
+            <p>&nbsp;</p>
+            <p><strong>无样式 </strong></p>
+            <p>引用<code>class="current unstyled"</code></p>
+            
+            <!--demo-->
+          <div class="current unstyled">
+            	<a href="#">首页</a>
+          &gt; <a href="#">概述</a> &gt; 组件</div>
+           <!--//demo-->
+ 
+            
+            
+            
+          
+            <p id="pager">&nbsp;</p>
+            <p><strong>分页</strong></p>
+            <p>通用而简洁的分页样式</p>
+    
+
+    	
+    	  <pre class="prettyprint">&lt;div class=&quot;pager&quot;&gt;
+&lt;a href=&quot;#&quot;&gt;首页&lt;/a&gt;
+&lt;a href=&quot;#&quot;&gt;上一页&lt;/a&gt;
+&lt;a href=&quot;#&quot;&gt;1&lt;/a&gt;
+&lt;a href=&quot;#&quot;&gt;2&lt;/a&gt;
+&lt;a href=&quot;#&quot;&gt;3&lt;/a&gt;
+&lt;a href=&quot;#&quot;&gt;4&lt;/a&gt;
+&lt;a href=&quot;#&quot;&gt;5&lt;/a&gt;
+&lt;a href=&quot;#&quot;&gt;...&lt;/a&gt;
+&lt;a href=&quot;#&quot;&gt;99&lt;/a&gt;
+&lt;a href=&quot;#&quot;&gt;下一页&lt;/a&gt;
+&lt;a href=&quot;#&quot;&gt;尾页&lt;/a&gt;
+&lt;/div&gt;</pre>
+      
+    
+        	<!--demo-->
+          <div class="pager">
+            	<a href="#">首页</a>
+            	<a href="#">上一页</a>
+            	<a href="#">1</a>
+            	<a href="#">2</a>
+            	<a href="#" class="selected">3</a>
+            	<a href="#">4</a>
+            	<a href="#">5</a>
+            	<a href="#">...</a>
+            	<a href="#">99</a>
+            	<a href="#">下一页</a>
+            	<a href="#">尾页</a>          
+         </div>
+         <!--//demo-->
+        
+          <p>&nbsp;</p>
+          <p><strong>无样式分页 </strong></p>
+          <p>引用样式<code>class="pager unstyled"</code></p>
+          
+          <!--demo-->
+          <div class="pager unstyled">
+            	<a href="#">首页</a>
+            	<a href="#">上一页</a>
+            	<a href="#">1</a>
+            	<a href="#">2</a>
+            	<a href="#" class="selected">3</a>
+            	<a href="#">4</a>
+            	<a href="#">5</a>
+            	<a href="#">...</a>
+            	<a href="#">99</a>
+            	<a href="#">下一页</a>
+            	<a href="#">尾页</a>          
+        </div>
+        <!--//demo-->
+   	 
+            
+            
+            
+          
+            <p id="tag">&nbsp;</p>
+            <p><strong>tag标签</strong></p>
+            <!--demo-->
+          <table width="200" border="0" class="bordered">
+  <tr>
+    <td><span class="label">默认</span></td>
+    <td><code>&lt;span class=&quot;label&quot;&gt;默认&lt;/span&gt;</code></td>
+  </tr>
+  <tr>
+    <td><span class="label success">成功</span></td>
+    <td><code>&lt;span class=&quot;label success&quot;&gt;成功&lt;/span&gt;</code></td>
+  </tr>
+  <tr>
+    <td><span class="label warning">默认</span></td>
+    <td><code>&lt;span class=&quot;label warning&quot;&gt;警告&lt;/span&gt;</code></td>
+  </tr>
+  <tr>
+    <td><span class="label error">默认</span></td>
+    <td><code>&lt;span class=&quot;label error&quot;&gt;错误&lt;/span&gt;</code></td>
+  </tr>
+</table>
+<!--//demo-->
+   	 
+            
+            
+            
+            
+            <p id="alert">&nbsp;</p>
+            <p><strong>提示信息</strong></p>
+            <p>不同的提示信息是不同的颜色，容易理解</p>
+    
+
+    	  <pre class="prettyprint">&lt;div class=&quot;alert&quot;&gt;<br>&lt;strong&gt;提示信息！&lt;/strong&gt;这是一段普通的提示信息描述            
+&lt;/div&gt;</pre>
+      
+    	
+            
+            <p>&nbsp;</p>
+            <p><strong>默认提示风格</strong></p>
+<div class="alert">
+            	<strong>提示信息！</strong>这是一段普通的提示信息描述            </div>
+            
+            <p>&nbsp;</p>
+            <p><strong>正确提示风格</strong></p>
+<div class="alert success">
+            	<strong>恭喜你！</strong>经过你的不懈努力，你升级啦！            </div>
+            
+            <p>&nbsp;</p>
+            <p><strong>错误提示风格</strong></p>
+<div class="alert error">
+            	<strong>权限不足！</strong>您没有权限访问本页，请问管理员索要权限。            </div>
+   	  
+            
+            
+            <p id="progress">&nbsp;</p>
+            <p><strong>进度条</strong></p>
+            <pre class="prettyprint">&lt;div class=&quot;progress&quot;&gt;<br>&lt;div class=&quot;bar&quot; style=&quot;width:50%;&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;</pre>
+  
+        	
+            
+            <p>&nbsp;</p>
+            <p><strong>默认提示风格</strong></p>
+<div class="progress">
+            	<div class="bar" style="width:50%;"></div>
+            </div>
+            <p>&nbsp;</p>
+            <p><strong>格子状</strong></p>
+<div class="progress striped">
+            	<div class="bar" style="width:50%;"></div>
+            </div>
+            <p>&nbsp;</p>
+            <p><strong>动态滚动</strong></p>
+<div class="progress striped active">
+            	<div class="bar" style="width:50%;"></div>
+            </div>
+            <p>&nbsp;</p>
+            <p><strong>成功</strong></p>
+<div class="progress success">
+            	<div class="bar" style="width:50%;"></div>
+            </div>
+            <p>&nbsp;</p>
+            <p><strong>警告</strong></p>
+<div class="progress warning">
+            	<div class="bar" style="width:50%;"></div>
+            </div>
+            <p>&nbsp;</p>
+            <p><strong>危险</strong></p>
+<div class="progress danger">
+            	<div class="bar" style="width:50%;"></div>
+            </div>
+  
+  
+  
+  
+           
+            <p id="well">&nbsp;</p>
+            <p><strong>消息墙</strong></p>
+            <p>突出展示一些信息</p>
+    
+	
+    	  <pre class="prettyprint">&lt;div class=&quot;well&quot;&gt;<br>...
+&lt;/div&gt;</pre>
+    
+  			<!--demo-->
+        	<div class="well">
+            	消息墙，可以突出展示一些信息            
+        	</div>
+ 			<!--//demo-->
+
+     
+            
+            <p id="masthead">&nbsp;</p>
+            <p><strong>刊头</strong></p>
+            <p>突出展示一些信息</p>
+	
+    	  <pre class="prettyprint">&lt;div class=&quot;masthead&quot;&gt;<br>&lt;h1&gt;slice&lt;/h1&gt;<br>&lt;div class=&quot;lead&quot;&gt;国产响应式css框架&lt;/div&gt;<br>&lt;div class=&quot;social&quot;&gt;兼容ie6，ie7，ie8，firefox，chrome等浏览器&lt;/div&gt;
+&lt;/div&gt;</pre>
+       
+       		<!--demo-->
+        	<div class="masthead">
+            	<h2>slice</h1>
+                <div class="lead">国产响应式css框架</div>
+                <div class="social">兼容ie6，ie7，ie8，firefox，chrome等浏览器</div>
+            </div>
+        	<!--//demo-->
+            
+         
+            <p  id="timeline">&nbsp;</p>
+            <p><strong>时间轴</strong></p>
+            <p>时间线（timeline）是将一系列按照时间发生的事件拖放在一条直线上，来使用户直观的看出事件的先后关系。时间线一词还用来形容按照时间排列的年度报表或者其他文档。 </p>
+    
+	
+    	
+    	  <pre class="prettyprint">&lt;ul class=&quot;timeline&quot;&gt;<br>            	&lt;li class=&quot;event&quot;&gt;<br>                	&lt;label&gt;&lt;/label&gt;<br>                	&lt;div class=&quot;thumb&quot; style=&quot;background-image:url(imgs/darthvader.jpg);&quot;&gt;<br>                    	&lt;span&gt;19 Nov&lt;/span&gt;<br>                    &lt;/div&gt;<br>                    &lt;div class=&quot;inner&quot;&gt;<br><br>                    &lt;/div&gt;<br>                &lt;/li&gt;<br>            	&lt;li class=&quot;event&quot;&gt;<br>                	&lt;label&gt;&lt;/label&gt;<br>                	&lt;div class=&quot;thumb&quot; style=&quot;background-image:url(imgs/darthvader.jpg);&quot;&gt;<br>                    	&lt;span&gt;19 Nov&lt;/span&gt;<br>                    &lt;/div&gt;<br>                    &lt;div class=&quot;inner&quot;&gt;<br><br>                    &lt;/div&gt;<br>                &lt;/li&gt;<br>            &lt;/ul&gt;</pre>
+     		
+     		<!--demo-->
+        	<ul class="timeline">
+            	<li class="event">
+                	<label></label>
+                	<div class="thumb" style="background-image:url(imgs/darthvader.jpg);">
+                    	<span>19 Nov</span>                    </div>
+                    <div class="inner">
+                    	<h3>I find your lack of faith disturbing</h3>
+                        <p>Don't be too proud of this technological terror you've constructed. The ability to destroy a planet is insignificant next to the power of the Force. The plans you refer to will soon be back in our hands. A tremor in the Force. The last time I felt it was in the presence of my old master. Escape is not his plan. I must face him. Alone.</p>
+                    </div>
+                </li>
+            	<li class="event">
+                	<label></label>
+                	<div class="thumb" style="background-image:url(imgs/darthvader.jpg);">
+                    	<span>19 Nov</span>                    </div>
+                    <div class="inner">
+                    	<h3>I find your lack of faith disturbing</h3>
+                        <p>Don't be too proud of this technological terror you've constructed. The ability to destroy a planet is insignificant next to the power of the Force. The plans you refer to will soon be back in our hands. A tremor in the Force. The last time I felt it was in the presence of my old master. Escape is not his plan. I must face him. Alone.</p>
+                    </div>
+                </li>
+            </ul>
+            <!--//demo-->
+
+            
+            
+            <!--pricing-->
+            <p id="pricing">&nbsp;</p>
+            <p><strong>价目表</strong></p>
+            <!--demo-->
+     
+     <div class="pricing-tables">
+     	<div class="pricing-box">
+        	<div class="pricing-head">
+            	Smart Starter
+            </div>
+            <div class="pricing-body">
+            	<ul>
+                	<li>I asked my mother</li>
+                	<li>what will I be</li>
+                	<li>will I be pretty</li>
+               	  <li>will I be rich</li>
+                </ul>
+            </div>
+            <div class="pricing-foot">
+            	<h3>Price per month</h3>
+                <p><a href="#" class="btn">Contact</a></p>
+            </div>
+        </div>
+     	<div class="pricing-box large">
+        	<div class="pricing-head">
+            	Smart Medium 
+            </div>
+            <div class="pricing-body">
+            	<ul>
+                	<li>I asked my mother</li>
+                	<li>what will I be</li>
+                	<li>will I be pretty</li>
+               	  <li>will I be rich</li>
+                </ul>
+            </div>
+            <div class="pricing-foot">
+            	<h3>Price per month</h3>
+                <p><a href="#" class="btn">Contact</a></p>
+            </div>
+        </div>
+     	<div class="pricing-box">
+        	<div class="pricing-head">
+            	Smart Business
+            </div>
+            <div class="pricing-body">
+            	<ul>
+                	<li>I asked my mother</li>
+                	<li>what will I be</li>
+                	<li>will I be pretty</li>
+               	  <li>will I be rich</li>
+                </ul>
+            </div>
+            <div class="pricing-foot">
+            	<h3>Price per month</h3>
+                <p><a href="#" class="btn">Contact</a></p>
+            </div>
+        </div>
+     </div>
+                          <!--//demo-->
+                       
+                        	<pre class="prettyprint">&lt;div class=&quot;pricing-tables&quot;&gt;<br>     	&lt;div class=&quot;pricing-box&quot;&gt;<br>        	&lt;div class=&quot;pricing-head&quot;&gt;<br><br>            &lt;/div&gt;<br>            &lt;div class=&quot;pricing-body&quot;&gt;<br><br>            &lt;/div&gt;<br>            &lt;div class=&quot;pricing-foot&quot;&gt;<br><br>            &lt;/div&gt;<br>        &lt;/div&gt;<br>     	&lt;div class=&quot;pricing-box large&quot;&gt;<br>        	&lt;div class=&quot;pricing-head&quot;&gt;<br><br>            &lt;/div&gt;<br>            &lt;div class=&quot;pricing-body&quot;&gt;<br><br>            &lt;/div&gt;<br>            &lt;div class=&quot;pricing-foot&quot;&gt;<br><br>            &lt;/div&gt;<br>        &lt;/div&gt;<br>     	&lt;div class=&quot;pricing-box&quot;&gt;<br>        	&lt;div class=&quot;pricing-head&quot;&gt;<br><br>            &lt;/div&gt;<br>            &lt;div class=&quot;pricing-body&quot;&gt;<br><br>            &lt;/div&gt;<br>            &lt;div class=&quot;pricing-foot&quot;&gt;<br><br>            &lt;/div&gt;<br>        &lt;/div&gt;<br>     &lt;/div&gt;</pre>
+          
+            <!--//pricing-->
+
+
+            <!--counter-->
+            <p id="counter">计数器</p> 
+                      
+<!--demo-->
+     
+						  <div class="counter">
+                                	<span class="counter-text">
+                                    	累计                                    </span>
+                                    <span class="counter-btns">
+                                    	<i>1</i><i>3</i><i>2</i><i>6</i><i>6</i><i>8</i><span class="counter-btns-lt"></span>                                    </span>
+                                	<span class="counter-text">
+                                    	次下载                                    </span>                          </div>
+<!--//demo-->
+                        
+                            <pre class="prettyprint">&lt;div class=&quot;counter&quot;&gt;<br>&lt;span class=&quot;counter-text&quot;&gt;<br>   	slice累计<br>&lt;/span&gt;<br>&lt;span class=&quot;counter-btns&quot;&gt;<br>&lt;i&gt;1&lt;/i&gt;&lt;i&gt;3&lt;/i&gt;&lt;i&gt;2&lt;/i&gt;&lt;i&gt;6&lt;/i&gt;&lt;i&gt;6&lt;/i&gt;&lt;i&gt;8&lt;/i&gt;&lt;span class=&quot;counter-btns-lt&quot;&gt;&lt;/span&gt;<br>&lt;/span&gt;<br>&lt;span class=&quot;counter-text&quot;&gt;<br>    下载<br>&lt;/span&gt;<br>&lt;/div&gt;</pre>
+            
+            <!--//counter-->
+             
+        
+        </div>
+   </div>
+	
+</div>
+ 
+ 
+
+<div class="wrapper footer">
+	<p>&copy; CopyRight 2002-2013, Wuhan Qietu Network Technology Co., Ltd. All Rights Reserved.<br/>
+	代码基于<a href="http://www.apache.org/licenses/LICENSE-2.0" rel="nofollow" target="_blank">Apache License v2.0</a>, 文档基于创作共享的 <a href="http://creativecommons.org/licenses/by-nc-sa/2.5/cn/" rel="nofollow" target="_blank">署名-非商业使用-相同方 式分享 2.5</a> 协议发布</p>
+</div>
+
+<script src="assets/js/jquery-1.7.1.min.js"></script> 
+<script src="assets/js/slice.js"></script> 
+<script src="js/prettify.js"></script>
+<script src="js/docs.js"></script>
+
+</body>
+</html>
+
